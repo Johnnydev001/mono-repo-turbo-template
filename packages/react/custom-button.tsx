@@ -1,9 +1,7 @@
-import React from "react";
-
 export const CustomButton = (
   title: string = "",
   text: string = "",
-  onClick = () => {}
+  onClick: () => void
 ) => {
   const style = {
     border: "none",
