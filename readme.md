@@ -2,7 +2,7 @@
 
 This project was created with the sole purpose of learning how to create a Monorepo using Vercel's Turborepo.
 
-The structure represents a typical monorepo project in which:
+## Structure
 
 - **`apps/`**: This folder contains the individual applications. In this case one with React and another with Svelte.
 - **`packages/`**: This folder contains shared libraries and packages. In this case they are utilities and components for each application.
@@ -11,13 +11,11 @@ The structure represents a typical monorepo project in which:
 
 ## How to run:
 
-Run
+Run the following command to install the required dependencies (both external and internal).
 
 ```bash
 npm i
 ```
-
-to install the required dependencies (external and internal from the packages folder).
 
 Run the turbo tasks to automatically execute the corresponding scripts in each application:
 
