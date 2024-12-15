@@ -1,0 +1,17 @@
+{
+  "name": "time-utils",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "types": "dist/time-utils.d.ts",
+      "import": "dist/time-utils.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "typescript": "^4.x.x"
+  },
+  "devDependencies": {}
+}

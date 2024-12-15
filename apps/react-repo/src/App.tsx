@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { CustomButton } from "react-ui/custom-button";
+import { getCurrentDateTime } from "time-utils";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,8 +20,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        {CustomButton("title", `count is ${count}`, () =>
-          setCount((count) => count + 1)
+        {CustomButton(
+          "title",
+          `time is ${count + getCurrentDateTime(new Date())}`,
+          () => setCount((count) => count + 1)
         )}
 
         <p>
