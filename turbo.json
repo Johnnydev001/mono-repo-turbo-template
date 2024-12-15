@@ -4,13 +4,12 @@
     "check": {
       "dependsOn": ["^check"]
     },
-
     "dev": {
       "persistent": true,
       "cache": false
     },
     "build": {
-      "dependsOn": ["check"]
+      "outputs": ["dist/**"]
     },
     "preview": {
       "dependsOn": ["build"],
